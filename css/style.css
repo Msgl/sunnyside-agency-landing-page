@@ -496,8 +496,8 @@ p {
 }
 
 .footer .social img:hover {
-  -webkit-filter: grayscale(1) brightness(0) invert(1);
-          filter: grayscale(1) brightness(0) invert(1);
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
 }
 
 /* ~~~~~~~~~~~~~ FOOTER > 650px ~~~~~~~~~~~~~ */
