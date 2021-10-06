@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <!-- NAVIGATION -->
+      <div class="nav">
+        <div class="logo"><img src="/images/logo.svg" alt="company logo"></div>
+        <nav>
+          <ul class="nav-links hidden" id="nav-links" >
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="" class="contact">Contact</a></li>
+          </ul>
+          <button class="navbutton"  onclick="toggleNav()"><img src="/images/icon-hamburger.svg" alt="mobile navigation toggle"></button>
+        </nav>
+      </div>
+      <div class="hero">
+        <h1 data-aos="fade-down">
+          We are creatives
+        </h1>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main"  >
+      <!-- images + text -->
+      <div class="main-section">
+        <!-- TOP PART -->
+        <div class="img-top" data-aos="fade-left"></div>
+        <article class="text-top"  data-aos="fade-right">
+          <h2>
+            Transform your brand
+          </h2>
+          <p>
+            We are a full-service creative agency
+            specializing in helping brands grow fast. Engage your clientsthrough
+            compelling visuals that do most of the marketing for you. 
+          </p>
+          <a href="#" class="link-learn link-yellow">Learn more</a>
+         </article>
+         <!-- MIDDLE PART -->
+        <div class="img-middle" data-aos="fade-right"></div>
+        <article class="text-middle" data-aos="fade-left">
+          <h2>
+            Stand out to the right audience
+          </h2>
+          <p>
+            Using a collaborative formula of
+            designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="" class="link-learn link-red">Learn more</a>
+        </article>
+        <!-- BOTTOM PART -->
+        <article class="text-bottom-left" data-aos="fade-right">
+          <div class="text">
+            <h2>Graphic design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            </p>
+          </div>
+        </article>
+        <article class="text-bottom-right" data-aos="fade-left">
+          <div class="text">
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning,
+            high-quality photos that improve your business image.
+          </p>
+          </div>
+        </article>
+      </div>
+      <!-- TESTIMONIALS -->
+      <section class="testimonials">
+        <h2>Client Testimonials</h2>
+        <!-- FIRST CLIENT -->
+        <article data-aos="zoom-out">
+          <img src="/images/image-emily.jpg" alt="profile picture of client named Emily">
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h3>Emily R. Marketing</h3>
+          <p><small>Director</small></p>
+        <!-- SECOND CLIENT -->
+        </article>
+        <article data-aos="zoom-out">
+          <img src="/images/image-thomas.jpg" alt="profile picture of client named Thomas" >
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+            success made it a satisfying and enjoyable experience.
+          </p>
+          <h3>Thomas S. Chief</h3>
+          <p><small>Operating Officer</small></p>
+        </article>
+        <!-- THRID CLIENT -->
+        <article data-aos="zoom-out">
+          <img src="/images/image-jennie.jpg" alt="profile picture of client named Jennie">
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h3>Jennie F.</h3>
+          <p><small>Business Owner</small></p>
+        </article>
+      </section>
+
+      <div class="picture-section">
+        <div class="picture-one"></div>
+        <div class="picture-two"></div>
+        <div class="picture-three"></div>
+        <div class="picture-four"></div>
+      </div>
+    </main>
+    <footer class="footer" >
+      <div class="logo" ><img data-aos="flip-up" src="/images/logo-blueish.svg" alt="company logo in blue color"></div>
+      <div class="footer-nav">
+        <ul >
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a href=""><img src="/images/icon-facebook.svg" alt="facebook icon"></a></li>
+          <li><a href=""><img src="/images/icon-instagram.svg" alt="instagram icon"></a></li>
+          <li><a href=""><img src="/images/icon-twitter.svg" alt="twitter icon"></a></li>
+          <li><a href=""><img src="/images/icon-pinterest.svg" alt="pinterest icon"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:800
+      });
+    </script>
+  </body>
+</html>
